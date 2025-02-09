@@ -13,7 +13,9 @@ const Sidebar = () => {
     <div className='sidebar-section'>
       <div className="sidebar-layout">
         <div className="sidebar-logo">
-          <img src={SIDEBAR_LOGO} alt="SIDEBAR_LOGO" />
+          <Link to='/dashboard'>
+            <img src={SIDEBAR_LOGO} alt="SIDEBAR_LOGO" />
+          </Link>
         </div>
         <div className="nav-items">
           <div className={`nav-item ${location.pathname === '/dashboard' ? 'active' : ''}`}>
