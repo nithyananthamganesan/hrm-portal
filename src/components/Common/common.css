@@ -1,0 +1,92 @@
+.header-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sub-header-title{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card-with-icon {
+    /* margin: 5% 5%; */
+    border: 1px solid #f1f1f1;
+    /* display: inline-flex; */
+    /* display: inline-block; */
+    width: 157px;
+    height: 157px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-with-icon .cards-section {
+
+    
+}
+
+.card-with-icon .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-section {
+    /* margin: 2%;  */
+
+}
+
+.input-section .input-field input {
+    padding: 2% 30% 2% 5%;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.input-section .input-field .error-message {
+    color: red;
+    font-size: small;
+}
+
+.input-section .input-label{
+    font-size: .8rem;
+}
+
+.input-section .input-label .label-mandatory {
+    color: red;
+}
+
+.input-field-select select  {
+    /* width: 100%; */
+    padding: 2% 50% 2% 4%;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1190px ) {
+    .sub-header-title{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:975px ) {
+    .sub-header-title{
+        font-size: .7rem;
+        font-weight: 500;
+    }
+    
+}
+@media screen and (max-width:768px ) {
+    .sub-header-title{
+        font-size: .9rem;
+        font-weight: 500;
+    }
+    .input-field-select select  {
+        width: 100%;
+        padding: 2% 40% 2% 4%;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+    }
+}

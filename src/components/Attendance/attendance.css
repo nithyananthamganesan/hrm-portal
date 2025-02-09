@@ -1,0 +1,25 @@
+.attendances-section {
+    width: 100%;
+    /* margin: 0% 1%; */
+}
+
+.attendances-cards-section {
+    display: flex;
+    width: 50%;
+}
+
+.attendances-cards-section .attendances-cards {
+    margin: 1%;
+}
+
+@media only screen and (max-width:768px) {
+    .attendances-cards-section {
+        display: flex;
+        width: 100%;
+    }
+    
+    .attendances-cards-section .attendances-cards {
+        margin: 1%;
+    }
+}
+

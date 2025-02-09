@@ -1,0 +1,268 @@
+/* LAYOUT-SECTION */
+.layout-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+/* SIDEBAR */
+
+.sidebar-section {
+    /* display: none; */
+    width: 20%;
+    /* height: 100vh; */
+    background-color: #FAFAFA;
+}
+
+.sidebar-logo > img {
+    width: 50%;
+    margin: 0% 10%;
+    padding: 3% 2% 0% 3%;
+}
+
+.nav-items {
+    padding: 2% 2% 1% 3%;
+}
+
+.nav-item {
+    display: flex;
+    margin: 1% 2% 1% 2%;
+    padding: 4% 3% 4% 3%;
+    /* align-items: center; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-icon {
+    margin-right: 1rem;
+}
+
+.nav-icon >img > svg:hover {
+    background-color: #E9374A;
+}
+
+.nav-item.active {
+    color: #E9374A; /* Highlight color */
+    border-radius: 5px;
+  }
+
+
+
+.nav-label {
+    font-size: 1rem;
+    
+}
+
+.nav-label > .navlink {
+    text-decoration: none;
+    color: #686868;
+}
+
+.nav-label > .navlink:hover, .nav-item.active .navlink {
+    color: #E9374A;
+}
+
+.divider {
+    margin: 1% 5%;
+    color: #686868;
+    font-size: small;
+}
+
+/* HEADER SECTION */
+.main-content {
+    width: 80vw;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.content-section {
+    margin: 2%;
+}
+
+.header-section {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.header-layout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 1%;
+}
+
+.searchbar-section{
+    /* margin: 1% 1%; */
+    padding: 1% 1%;
+}
+
+.searchbar-section .searchbar-form input[type="text"]{
+    width: 300px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    padding: 3% 3%;
+    background-color: #FAFAFA ;
+
+}
+.searchbar-form {
+    position: relative;
+}
+.searchbar-form .search-icon {
+    position: absolute;
+    top:20%;
+    right: 0;
+}
+
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-section .icon>img {
+    /* height:30%; */
+    /* width: 50%; */
+    margin:0 .9rem;
+}  
+
+.profile-img> img {
+    width: 48px;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile .username {
+    margin-left: .5rem;
+}
+.menu-toggle {
+    display: none;
+}
+  
+@media only screen and (max-width:768px) {
+    .sidebar-section {
+        display: none;
+    }
+    .main-content {
+        width: 100vw;
+    }
+    .content-section {
+        margin: 1%;
+    }
+    .searchbar-section{
+        /* margin: 1% 1%; */
+        padding: .5% .5%;
+    }
+    .searchbar-section .searchbar-form input[type="text"]{
+        /* width: 100%; */
+        padding: 3% 2%;
+    }
+    .profile-section .icon>img {
+        width: 20px;
+        margin:0 .5rem;
+    } 
+    .profile-img> img {
+        width: 36px;
+        margin-left: 5%;
+    }
+    .profile .username {
+        margin-left: .2rem;
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:532px) {
+    .sidebar-section {
+        display: none;
+    }
+    .main-content {
+        width: 100vw;
+    }
+    .content-section {
+        margin: 1%;
+    }
+    .searchbar-section{
+        /* margin: 1% 1%; */
+        padding: .5% .5%;
+    }
+    .searchbar-section .searchbar-form input[type="text"]{
+        width: 100%;
+        padding: 3% 2%;
+    }
+    
+    .profile-section .icon>img {
+        width: 20px;
+        margin:0 .5rem;
+        display: none;
+    } 
+    .profile-img> img {
+        width: 36px;
+        margin-left: 5%;
+    }
+    .profile .username {
+        margin-left: .2rem;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img,.chat,.profile,.notification  {
+        display: none; /* Hide profile image */
+    }
+
+    .nav-menu .profile-img {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu-toggle {
+        display: block;
+        
+    }
+    .menu-toggle .ham-icon {
+        font-size: 2rem;
+    }
+
+    .menu-toggle >.ham-icon:hover {
+        background-color: #686868;
+        color: #fff;
+        padding: 5%;
+        border-radius: 5px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        padding: 10px;
+    }
+
+    .nav-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-menu ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-menu ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        display: block;
+    }
+
+    .nav-menu ul li a:hover {
+        background: #f0f0f0;
+    }
+}
