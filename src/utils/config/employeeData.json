@@ -1,0 +1,31 @@
+[
+    {
+      "empName": "John Doe",
+      "empNumber": "EMP001",
+      "empMobileNumber": "9876543210",
+      "empEmail": "johndoe@example.com",
+      "empJoiningDate": "2023-01-15",
+      "empStatus": "Confirmed",
+      "dateOfBirth": "1990-05-20",
+      "gender": "Male",
+      "maritalStatus": "Single",
+      "isPhysicalChallenged": "No",
+      "bloodGroup": "O+",
+      "personalEmailId": "john.personal@example.com"
+    },
+    {
+      "empName": "Jane Smith",
+      "empNumber": "EMP002",
+      "empMobileNumber": "9876543211",
+      "empEmail": "janesmith@example.com",
+      "empJoiningDate": "2022-11-10",
+      "empStatus": "Probation",
+      "dateOfBirth": "1995-07-12",
+      "gender": "Female",
+      "maritalStatus": "Married",
+      "isPhysicalChallenged": "No",
+      "bloodGroup": "A+",
+      "personalEmailId": "jane.personal@example.com"
+    }
+]
+  

@@ -1,0 +1,158 @@
+/* LOGIN PAGE */
+.signin-section {
+    display: flex;
+}
+/* LOGIN - LEFT */
+.login-page-left {
+    width: 50%;
+    /* margin-left: 5%; */
+    /* margin-top: 5%; */
+    /* margin-right: 10%; */
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #f6f6f6;
+}
+
+.login-page-logo > img{
+    width: 30%;
+    margin-bottom: 2rem;
+}
+
+.login-page-title {
+    margin-bottom: 2rem;
+}
+
+.login-page-title > p {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #393939;
+}
+
+.login-page-title > p > span {
+    display: block;
+    font-size: x-large;
+    font-weight: 700;
+    color: #393939;
+}
+
+.login-form  input[type = "text"], input[type = "password"] {
+    width: 70%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    padding-left: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    outline: none;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    /* margin-bottom: 15px; */
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-icon img {
+    width: 25%; /* Adjust size as needed */
+    /* height: 20%; */
+  }
+
+.login-form button {
+    width: 72%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 3%;
+    background-color: #E9374A;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: small;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.remember-me input[type="checkbox"]{
+    margin-right: 1%;
+    color: #d9d9d9;
+}
+
+.remember-me label {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* LOGIN - RIGHT */
+.login-page-right{
+    width: 50%;
+}
+.login-page-poster > img {
+    width: 100%;
+}
+
+@media only screen and (max-width : 767px ){
+    .login-page-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .login-page-logo > img{
+        width: 70%;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .login-form  input[type = "text"], input[type = "password"] {
+        width: 90%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        padding-left: 2%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border: none;
+        outline: none;
+    }
+    .login-form button {
+        width: 92%;
+        padding-left: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-top: 5%;
+        background-color: #E9374A;
+        color: #fff;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .remember-me input[type="checkbox"]{
+        margin-top: 5%;
+        margin-right: 3%;
+        color: #d9d9d9;
+    }
+    
+    .remember-me label {
+        color: #666666;
+        font-size: 1rem;
+    }
+    
+    .login-page-right{
+        display: none;
+    }
+    .input-icon img {
+        display: none;
+      }
+}

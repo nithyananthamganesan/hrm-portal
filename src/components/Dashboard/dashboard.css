@@ -1,0 +1,399 @@
+.dashboard-section{
+    display: flex;
+    width: 100%;
+    /* max-height: 100vh; */
+
+}
+
+/* DASHBOARD-DETAILS */
+.dashboard-details{
+    width: 60%;
+    /* max-height: 100vh; */
+    /* height: 100%; */
+    /* max-height: 100vh;
+    overflow-y: scroll; */
+}
+
+.attendance-card-section{
+    width: 100%;
+    /* height: 40vh; */
+    margin:1% 0% 0 0;
+    display: flex;
+}
+
+.attendance-card-section .attendance-card {
+    width: 30%;
+    height: 15vh;
+    /* background-color: antiquewhite; */
+    margin: 0% 1%;
+    padding: 3% 3%;
+    border-radius: .6rem;
+}
+
+.attendance-card .count {
+    font-size: 2.2rem;
+}
+
+.payroll-task-section {
+    width: 100%;
+    display: flex;
+}
+.payroll-task-section .payroll-task-card{
+    position: relative;
+    /* width: 100%; */
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 1%;
+    padding: 4% 0;
+    border: 1px solid #f1f1f1;
+    border-radius: .6rem;
+}
+
+.payroll-task-card .card-left{
+    position: absolute;
+    left: 0;
+    margin: 1% 1%;
+    padding: 0% 4%; 
+}
+
+.payroll-task-card .card-left .count {
+    font-size: 3rem;
+}
+
+.payroll-task-card .card-left .person-count {
+    margin-top: 20%;
+}
+
+.payroll-task-card .card-left .person-count > p {
+    font-size: .75rem;
+    color: #686868;
+
+}
+
+
+.payroll-task-card .card-right .right-img > img{
+    float: right;
+    width: 40%;
+    margin: 6%;
+}
+
+/* ANNOUNCEMENT-CARD */
+.annuncement-card-section {
+    /* width: 100%; */
+    margin: 1% 1%;
+    padding: 2% 1%;
+    border: 1px solid #f1f1f1;
+    border-radius: .6rem;
+}
+.annuncement-card-section .title-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.annuncement-card-section .title-section .today-date {
+    border: 1px solid #EFEFEF;
+    font-size: .75rem;
+    color: #686868;
+    padding: 1%;
+}
+
+.annuncement-card-section .announcement-card {
+    margin: 1% 1%;
+    padding: 2% 2%;
+    border: 1px solid #f1f1f1;
+    background-color: #FAFAFA;
+    border-radius: .6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.annuncement-card-section .announcement-card .announcement-heading .announcement-title{
+    font-size: 1rem;
+}
+
+.annuncement-card-section .announcement-card .posted-time {
+    font-size: .6rem;
+    color: #686868;
+}
+
+.see-all-card {
+    border-top: 1px solid #f1f1f1;
+    text-align: center;
+    padding: .5% 0;
+}
+
+.see-all-card > p {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* CALENDAR-DETAILS */
+.calendar-container {
+    margin: 4% 2%;
+    height: 100%;
+}
+.calender-details{
+    width: 40%;
+}
+
+  .calendar-comp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 1% 1%;
+    /* max-height: 60%; */
+    border-radius: 2% !important;
+  }
+  
+  /* Calendar Styles */
+  .react-calendar {
+    border: none !important;
+    outline: none;
+    /* width: 0!important; */
+    background: #fafafa!important;
+    padding: 1%;
+    /* border: 1px solid #f1f1f1 !important; */
+    /* border-radius: 5%; */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Navigation */
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .react-calendar__navigation button {
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Weekday Header */
+  .react-calendar__month-view__weekdays {
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  /* Day Cells */
+  .react-calendar__tile {
+    padding: 10px;
+    text-align: center;
+    border-radius: 15%;
+    transition: 0.3s;
+  }
+  
+  .react-calendar__tile:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Highlighted Dates */
+  .highlight-orange {
+    background: linear-gradient(to right, #ff7f50, #ffcc00);
+    color: white;
+    border-radius: 50%;
+  }
+  
+  .highlight-blue {
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  /* Today’s Date */
+  .react-calendar__tile--now {
+    background: linear-gradient(to bottom, #ff7f50, #ffcc00) !important;
+    border-radius: 50%;
+  }
+  
+  /* Active Selected Date */
+  .react-calendar__tile--active {
+    background: #007bff !important;
+    color: white;
+    border-radius: 15%;
+  }
+
+  /* BIRTHDAY-CARD */
+  .birthday-calendar-section {
+    /* max-height: 40%; */
+    width: 100%;
+    /* margin: 4% 0%; */
+    
+  }
+  .birthday-calendar-title{
+    margin: 2% 2%;
+  }
+  .birthday-calendar-title > p {
+    font-size: .8rem;
+  }
+  .birthday-card-role > p{
+    font-size: .7rem;
+    font-weight: light;
+    color: #4F5B67;
+    margin-bottom: 5%;
+  }
+  .birthday-card-title{
+    margin-bottom: 5%;
+  }
+  .birthday-date > p{
+    font-weight: 400;
+    font-size: .6rem;
+    color: #4F5B67;
+    margin-top: 5%;
+    margin-bottom: 7%;
+  }
+  .birthday-card-section{
+    display: flex;
+    margin: 2% 2%;
+  }
+  .birthday-calendar-card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+    /* background-color: #007bff; */
+    border: 1px solid #f1f1f1;
+    border-radius: 4%;
+    width: 40%;
+    padding: 5%;
+    margin: 1% 1%;
+  }
+
+  .birthday-card-img{
+    width: 40%; 
+    margin-bottom: 7%;
+    
+  }
+
+  .birthday-card-content{
+    
+  }
+
+  .birthday-card-img > img {
+    background-color: #f1f1f1;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 50%;
+    object-fit: cover;
+  }
+
+  @media only screen and (max-width:1255px){
+    .dashboard-section{
+      display: block;
+    }
+    .dashboard-details{
+      width: 100%;
+    }
+    .calender-details{
+      display: flex;
+      width: 100%;
+    }
+  /* BIRTHDAY-CARD */
+  .birthday-calendar-section {
+    /* max-height: 40%; */
+    width: 100%;
+    /* margin: 4% 0%; */
+    
+  }
+    .birthday-card-img{
+      margin-bottom: 2%;
+    }
+    .birthday-card-section{
+      display: flex;
+      flex-direction: row;
+      width: 100%; 
+      height: 100%;
+      /* align-items: center; */
+    }
+
+  }
+
+  @media only screen and (max-width:767px){
+    .dashboard-section{
+      display: block;
+    }
+    .dashboard-details{
+      width: 100%;
+    }
+    .attendance-card-section{
+      width: 100%;
+      /* height: 40vh; */
+      margin:.5% 0% 0 0;
+      display: block;
+    }
+  
+    .attendance-card-section .attendance-card {
+        width: 95%;
+        /* height: ; */
+        /* background-color: antiquewhite; */
+        margin: 2% 0%;
+        padding: .5% 2%;
+        border-radius: .6rem;
+    }
+    .attendance-card .count {
+      font-size: 1.5rem;
+    }
+    .payroll-task-section {
+      width: 100%;
+      display: block;
+    }
+    .payroll-task-card .card-left .count {
+      font-size: 2rem;
+    } 
+    .payroll-task-card .card-right .right-img > img{
+      float: right;
+      width: 30%;
+      margin: 2%;
+    }
+    .payroll-task-card .card-left .person-count {
+      margin-top: 5%;
+    }
+    .calender-details{
+      display: block;
+    }
+    .birthday-card-section{
+      display: flex;
+      flex-direction: column;
+      width: 100%; 
+      align-items: center;
+    }
+    .birthday-calendar-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        /* background-color: #007bff; */
+        border: 1px solid #f1f1f1;
+        border-radius: 4%;
+        width: 100%;
+    }
+  }
+  @media only screen and (max-width:1366px) {
+    .attendance-card-section{
+      width: 100%;
+      /* height: 40vh; */
+      margin:.5% 0% 0 0;
+      /* display: block; */
+    }
+  
+    .attendance-card-section .attendance-card {
+        width: 100%;
+        /* height: ; */
+        /* background-color: antiquewhite; */
+        margin: 2% 1%;
+        padding: 2% 2%;
+        border-radius: .6rem;
+    }
+    .attendance-card .count {
+      font-size: 1.5rem;
+    }
+  }

@@ -1,0 +1,299 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.employee-count p span {
+  color: #2F2F2F66;
+}
+.employee-card-section {
+  display: flex;
+}
+
+/* Search Section */
+.emp-search-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px;
+  background: #fff;
+}
+
+.search-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Dropdown */
+.sort-dropdown {
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #666;
+  font-weight: normal !important;
+}
+.sort-icon{
+  color: #666;
+}
+.sort-icon:hover{
+  color: #000;
+  cursor: pointer;
+}
+
+/* Employee Table */
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.employee-table th, .employee-table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.employee-table th {
+  background: #f8f9fa;
+  font-weight: bold;
+}
+
+.employee-table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.employee-table tr:hover {
+  background: #f1f1f1;
+}
+
+.emp-id, .emp-name {
+  color: black;
+  /* font-weight: bold; */
+}
+
+.emp-email {
+  font-size: 12px;
+  color: #666;
+}
+
+.options-btn button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Add a wrapper around the table to enable horizontal scrolling */
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Prevent table cells from wrapping */
+.employee-table {
+  white-space: nowrap;
+}
+
+ /* ADD EMPLOYEE */
+ .add-employee-section {
+  background-color: #EFF0F6;
+  padding: 1% 1%;
+}
+.form-details {
+  margin: 1% 0%;
+  padding: 1% 2%;
+  background-color: white;
+  border-radius: 5px;
+}
+.employee-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 5px;  */
+}
+
+.emp-accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s all ease-in-out;
+}
+
+.emp-accordion-header .accordion-icon{
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  bottom: 50%;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+.emp-accordion-header .accordion-icon span{
+  position: absolute;
+  top: 10%;
+}
+
+.employee-details .divider {
+  grid-column: span 3;
+  /* height: 1px; */
+  background-color: #ccc;
+  /* margin: 10px 0; */
+}
+
+.add-employee-section form .form-buttons{
+  display: flex;
+  justify-content: end;
+}
+
+.add-employee-section form .form-buttons .form-button {
+  margin: 1% .5%;
+}
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1100px) {
+
+  .employee-details {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    /* gap: 5px;  */
+  }
+  
+  
+  .employee-details .divider {
+    grid-column: span 2;
+    /* height: 1px; */
+    background-color: #ccc;
+    /* margin: 10px 0; */
+  }
+  
+  .add-employee-section form .form-buttons{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .add-employee-section form .form-buttons .form-button {
+    margin: 1% .5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header, .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .employee-table th, .employee-table td {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .employee-details {
+    display: block;
+    grid-template-columns: repeat(3, 3fr);
+    /* gap: 5px;  */
+  }
+  
+  .emp-accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s all ease-in-out;
+  }
+  
+  .emp-accordion-header .accordion-icon{
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    bottom: 50%;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  .emp-accordion-header .accordion-icon span{
+    position: absolute;
+    top: 10%;
+  }
+  
+  .employee-details .divider {
+    /* grid-column: span 3; */
+    /* height: 1px; */
+    background-color: #ccc;
+    /* margin: 10px 0; */
+  }
+  
+  .add-employee-section form .form-buttons{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .add-employee-section form .form-buttons .form-button {
+    margin: 1% .5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header, .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .employee-table th, .employee-table td {
+    font-size: 0.7rem;
+    padding: 6px;
+  }
+}
