@@ -12,14 +12,14 @@ import AddEmployee from '../components/Employee/AddEmployee'
 import { LEAVE_REQUEST } from '../utils/constants'
 import LeaveRequest from '../components/Attendance/LeaveRequest'
 
-const MainProfile = () => {
+const MainProfile = ({handleSignout}) => {
   const location = useLocation();
   // const [isActive, setIsActive] = useState();
   return (
     <div className='layout-section'>
-      <Sidebar activePath={location.pathname} />
+      <Sidebar activePath={location.pathname} handleSignout={handleSignout} />
       <div className="main-content">
-        <Header />
+        <Header handleSignout={handleSignout}/>
         <div className="content-section">
           <Routes>
             <Route path="/dashboard" index element={<Dashboard />} />

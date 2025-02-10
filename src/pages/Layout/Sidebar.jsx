@@ -5,8 +5,10 @@ import {
   SIDEBAR_LOGO, SUPPORT, TASK 
 } from '../../utils/constants';
 import './layout.css'; // Ensure you have styles for active state
+import { CiLogout } from 'react-icons/ci';
+import { IoLogOut } from 'react-icons/io5';
 
-const Sidebar = () => {
+const Sidebar = ({handleSignout}) => {
   const location = useLocation(); // Get current path
 
   return (
@@ -81,6 +83,14 @@ const Sidebar = () => {
             </div>
             <div className="nav-label">
               <Link className="navlink" to="/settings">Settings</Link>
+            </div>
+          </div>
+          <div className={`nav-item `}>
+            <div className="nav-icon">
+            <IoLogOut style={{fontSize:"1.5rem",fontWeight:"900",color:"rgb(178, 178, 178)"}}/>
+            </div>
+            <div className="nav-label" onClick={()=>handleSignout()}>
+            <Link className="navlink" to="/">Logout</Link>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import './layout.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 
-const Header = () => {
+const Header = ({handleSignout}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -15,6 +15,10 @@ const Header = () => {
   return (
     <div className='header-section'>
       <div className="header-layout">
+      <div className={`menu-toggle ${isNavOpen ? "rotate" : ""}`} onClick={toggleNav}>
+            {isNavOpen ? <IoClose className="ham-icon"/> : <GiHamburgerMenu className="ham-icon"/>} 
+            <span className="search-icon"><img src={SEARCH} alt="SEARCH" /></span>
+          </div>
         <div className="searchbar-section">
           <div className="searchbar-form">
             <input type='text' placeholder='Search Employees' />
@@ -35,9 +39,7 @@ const Header = () => {
             {/* <img src="... " alt="Menu" className="ham-icon" /> */}
             {/* <GiHamburgerMenu className="ham-icon"/>
           </div> */}
-          <div className={`menu-toggle ${isNavOpen ? "rotate" : ""}`} onClick={toggleNav}>
-            {isNavOpen ? <IoClose className="ham-icon"/> : <GiHamburgerMenu className="ham-icon"/>} 
-          </div>
+
           
           <div className="profile">
             <div className="profile-img">
@@ -67,6 +69,12 @@ const Header = () => {
             <li><Link to="/dashboard" onClick={toggleNav}>Announcement</Link></li>
             <li><Link to="/dashboard" onClick={toggleNav}>Support</Link></li>
             <li><Link to="/dashboard" onClick={toggleNav}>Settings</Link></li>
+            <li><Link to="/" onClick={()=>{
+              toggleNav();
+              handleSignout();
+            
+            }
+              }>Logout</Link></li>
           </ul>
         </div>
       )}

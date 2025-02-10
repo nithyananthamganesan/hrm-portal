@@ -50,6 +50,12 @@ function App() {
     }
   }
 
+  const handleSignout = () => {
+    localStorage.removeItem('companyId');
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('loginTimeStamp');
+  }
+
   // const PrivateRoute = ({element}) => {
   //     (loggedIn === 'true') ? element : <Navigate to='/' replace />
   // }
@@ -57,7 +63,7 @@ function App() {
     
         <Routes>
           <Route path='/' element={<Signin handleSignIn={handleSignIn} error={error} />} />
-          <Route path="/*" element={<MainProfile />} />
+          <Route path="/*" element={<MainProfile handleSignout={handleSignout}/>} />
         </Routes>
     
   )
