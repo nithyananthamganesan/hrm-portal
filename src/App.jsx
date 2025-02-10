@@ -44,7 +44,7 @@ function App() {
         } else {
           localStorage.removeItem('companyId');
         }
-        navigate('/dashboard');
+        navigate('/');
     } else {
       setError("Invalid companyid or password")
     }
